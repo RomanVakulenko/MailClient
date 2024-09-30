@@ -1,0 +1,6 @@
+framework module Pods_SGTS {
+  umbrella header "Pods-SGTS-umbrella.h"
+
+  export *
+  module * { export * }
+}
