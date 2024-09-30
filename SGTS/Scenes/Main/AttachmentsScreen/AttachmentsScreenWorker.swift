@@ -65,8 +65,7 @@ final class AttachmentsScreenWorker: AttachmentsScreenWorkingLogic {
 
 
     func getAttachmentFileDataWith(attachmentLUID: String, completion: @escaping (Result<Data, AttachmentsScreenModel.Errors>) -> Void) {
-        EmailsManager.shared.getAttachmentFileDataWith(id: attachmentLUID) { [weak self] result in
-            guard let self else {return}
+        EmailsManager.shared.getAttachmentFileDataWith(id: attachmentLUID) { result in
             
             switch result {
             case .success(let fileDataOfOneAttachment):

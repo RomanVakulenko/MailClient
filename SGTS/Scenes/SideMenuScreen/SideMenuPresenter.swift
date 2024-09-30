@@ -45,7 +45,7 @@ final class SideMenuPresenter: SideMenuPresentationLogic {
 
 
     func presentUpdate(response: SideMenuFlow.Update.Response) {
-        let concurrentQueue = DispatchQueue(label: "kz.mailDetails.fileQueue",
+        let concurrentQueue = DispatchQueue(label: "ru.mailDetails.fileQueue",
                                             attributes: .concurrent)
         concurrentQueue.async { [weak self] in
             guard let self = self else { return }
@@ -186,8 +186,7 @@ final class SideMenuPresenter: SideMenuPresentationLogic {
                                    counterTextForArchive: String,
                                    counterTextForTrash : String,
                                    completion: @escaping (UIColor, [AnyDifferentiable]) -> Void) {
-        let concurrentQueue = DispatchQueue(label: "kz.gtech.mailDetails.fileQueue",
-                                            attributes: .concurrent)
+
         if typeOfUpdate == .allScreenWithAllCounts {
             items = []
         }

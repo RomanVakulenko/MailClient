@@ -71,7 +71,7 @@ final class UserProfilePresenter: UserProfilePresentationLogic {
     }
 
     func presentUpdate(response: UserProfileFlow.Update.Response) {
-        let concurrentQueue = DispatchQueue(label: "kz.mailDetails.fileQueue",
+        let concurrentQueue = DispatchQueue(label: "ru.mailDetails.fileQueue",
                                             attributes: .concurrent)
         concurrentQueue.async { [weak self] in
             guard let self = self else { return }

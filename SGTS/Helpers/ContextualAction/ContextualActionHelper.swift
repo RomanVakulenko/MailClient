@@ -11,11 +11,9 @@ public struct ContextualActionHelper {
             action()
             completion(true)
         }
-        
-        if let image = image, #available(iOS 13.0, *) {
-            contextualAction.image = image
-        }
-        
+
+        contextualAction.image = image
+
         if let color = color {
             contextualAction.backgroundColor = color
         }
