@@ -23,3 +23,8 @@
 - SnapKit, no storyboard
 - ActivityIndicatorView, SOLID, DRY
 - использование webView, Figma, Redmine
+
+
+
+<img width="762" alt="Снимок экрана 2024-10-10 в 11 14 40" src="https://github.com/user-attachments/assets/57b36997-211c-4f44-b893-b843ed3c446a">  
+<img width="570" alt="Снимок экрана 2024-10-10 в 11 14 06" src="https://github.com/user-attachments/assets/17a27dcb-eaf5-4e09-8fdd-3c1c2feeabfc">
